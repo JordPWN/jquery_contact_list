@@ -1,0 +1,47 @@
+<h1>Home Page</h1>
+<button id ="new_contact">New Contact</button>
+<div class = "column">
+	<div class = "selected_contact">
+
+	</div>
+</div>
+<div class = "column">
+	<div class = "contact_list well col-md-12">
+
+	</div>	
+
+
+
+
+
+</div>
+
+	<script id="contact_template" type="text/template">
+		<div class="contact card col-md-3">
+		 <img class="card-img-top" src="https://bucketlist.org/static/images/generic-profile-pic.png">
+			<div class="card-block">
+				<h1 class="js-title card-title"> {{ contact.first_name }}</h1>
+				<h3 class= "js-email">{{ contact.email }}</h3>
+				<h3 class="js-phone">{{ contact.phone }}</h3>
+				<h4 class="card-text">{{ contact.description }}</h4>
+			</div>
+		</div>
+	</script>
+
+	<script id="form_template" type="text/template">
+	<form class="contact card" id='contact_form'>
+	 <img class="card-img-top" src="https://bucketlist.org/static/images/generic-profile-pic.png">
+		<div class="card-block">
+			<h1 class="card-title">
+				<p><input type="text" name="first_name" value="" placeholder="First Name"></p>
+				<p><input type="text" name="last_name" value="" placeholder="Last Name"></p>
+			</h1>
+			<h3>
+		  	<p><input type="text" name="email" value="" placeholder="E-mail"></p>
+		  	<p><input type="text" name="phone" value="" placeholder="Phone Number"></p>
+		  </h3>
+		  <h4><p><input type="text-area" name="description" value="" placeholder="Description"></p></h4>
+		  <button type="submit" id="save" class = "btn btn-default" value="Submit">Save</button>
+		</div>
+	</form>
+</script>

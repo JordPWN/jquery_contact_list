@@ -1,0 +1,35 @@
+html, body{
+	text-align: center;
+}
+.contact {
+	/*height: 300px;*/
+	margin: 5px;
+	max-height: 30%;
+	overflow: scroll;
+
+}
+.card{
+	background-color: white;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #888888;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px #888888;
+}
+.contact img{
+	max-width: 100%;
+	max-height: 300px;
+}
+
+.contact_list {
+	display: flex-inline;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.selected_contact {
+	align-items: center;
+	/*display: flex-inline;*/
+	width: 100%;
+}
